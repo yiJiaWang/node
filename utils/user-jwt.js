@@ -14,6 +14,7 @@ const jwtAuth = expressJwt({
   secret: PRIVATE_KEY,
   // 设置为true表示校验，false表示不校验
   credentialsRequired: true,
+  // credentialsRequired: false,
   // 自定义获取token的函数
   getToken: (req) => {
     if (req.headers.authorization) {

@@ -11,6 +11,7 @@ const config = require('../db/dbConfig');
 // 连接mysql
 function connect() {
   const { host, user, password, database } = config;
+  console.log('config===',config)
   return mysql.createConnection({
     host,
     user,
